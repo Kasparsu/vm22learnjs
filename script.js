@@ -1,39 +1,41 @@
-for(let i=0; i<10; i++){
-    console.log(i);
-}
-let i = 1;
-while(i<1_000_000){
-    console.log(i);
-    i*=2;
-}
-
-i = 1;
-while(i>10){
-    console.log('asjklds');
+let num = 10;
+if(num > 10){
+    console.log('suurem');
+} else if(num === 10) {
+    console.log('võrdne');
+} else {
+    console.log('väiksem');
 }
 
-i = 1;
-do {
-    console.log('asjklds');
-} while(i>10);
+let day = new Date('2023-10-20').getDay();
+console.log(day);
+// if(day === 0){
+//     console.log('Pühapäev');
+// } else if(day === 1){
+//     console.log('Esmaspäev');
+// }
 
-let fruits=['banana', 'cherry', 'apple', 'pear'];
-
-for(let i=0; i<fruits.length; i++){
-    console.log(fruits[i]);
-}
-
-for(const fruit of fruits){
-    console.log(fruit);
-}
-
-let object = {
-    name: 'Kaspar',
-    age: 30,
-    eyes: 'blue'
-}
-
-for(const property in object){
-    console.log(property);
-    console.log(object[property]);
+switch(day){
+    case 0:
+        console.log('Pühapäev');
+        break;
+    case 1:
+        console.log('Esmaspäev');
+        break;
+    case 2:
+        console.log('Teisipäev');
+        break;
+    case 3:
+        console.log('Its Wednesday My DUDES!');
+        break;
+    case 4:
+        console.log('Neljapäev');
+        break;
+    case 5:
+        console.log('Its friday, friday, friday....');
+    case 6:
+        console.log('PartyDay');
+        break;
+    default: 
+        console.log('weirdday');
 }
