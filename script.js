@@ -1,41 +1,18 @@
-let num = 10;
-if(num > 10){
-    console.log('suurem');
-} else if(num === 10) {
-    console.log('võrdne');
-} else {
-    console.log('väiksem');
-}
+// You have to print the numbers from 1 to 200 in new line.
+// But for every multiple of 5 print "Foo",
+// for every multiple of 7 print "Bar" and
+// for every multiple of both 5 and 7 print "FooBar" instead of the number.
 
-let day = new Date('2023-10-20').getDay();
-console.log(day);
-// if(day === 0){
-//     console.log('Pühapäev');
-// } else if(day === 1){
-//     console.log('Esmaspäev');
-// }
-
-switch(day){
-    case 0:
-        console.log('Pühapäev');
-        break;
-    case 1:
-        console.log('Esmaspäev');
-        break;
-    case 2:
-        console.log('Teisipäev');
-        break;
-    case 3:
-        console.log('Its Wednesday My DUDES!');
-        break;
-    case 4:
-        console.log('Neljapäev');
-        break;
-    case 5:
-        console.log('Its friday, friday, friday....');
-    case 6:
-        console.log('PartyDay');
-        break;
-    default: 
-        console.log('weirdday');
+for(let i=1;i<=200;i++){
+    let answer = '';
+    if(i%5===0){
+        answer += 'Foo';
+    } 
+    if(i%7===0){
+        answer += 'Bar';
+    }
+    if(answer === ''){
+        answer = i;
+    } 
+    console.log(answer);   
 }
